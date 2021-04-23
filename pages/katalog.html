@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hijab by Humairah</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="../vendor/client/bootstrap/css/bootstrap.css">
+  <!-- unicons icon libs -->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+  <!-- Custom CSS Toko Hijab by Humairah -->
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white">
+    <a class="navbar-brand" href="index.html"><img src="../img/brand/logo.png" alt=""></a>
+    <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="uil uil-draggabledots"></i>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Beranda</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#Belanja" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Belanja <i class="uil uil-angle-down"></i>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="katalog.html">Semua</a>
+            <a class="dropdown-item" href="#">Hijab</a>
+            <a class="dropdown-item" href="#">Hijab</a>
+            <a class="dropdown-item" href="#">Hijab</a>
+            <a class="dropdown-item" href="#">Hijab</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#konfirmasi">Konfirmasi</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#tentang">Tentang</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#kontak">Kontak</a>
+        </li>
+      </ul>
+      <span class="nav-cart">
+        <a href="cart.html">Keranjang <i class="uil uil-shopping-bag"></i> <span class="badge badge-primary">99+</span></a>
+      </span>
+    </div>
+  </nav>
+  <!-- end Navbar -->
+
+  <section class="container">
+
+    <form action="" class="search-group">
+      <div class="search-title">
+        Pencarian
+      </div>
+
+      <div class="search-input-group">
+        <i class="uil uil-search"></i>
+        <input type="text" class="search-input">
+      </div>
+
+      <div class="filter-group">
+        <select class="filter-select custom-select" onchange="filter()" id="filterPencarian">
+          <option selected value="semua">Semua</option>
+          <option value="jenis1">Hijab Instan</option>
+          <option value="jenis2">Hijab Segiempat</option>
+          <option value="jenis3">Baju Muslim</option>
+          <option value="jenis4">Aksesoris</option>
+        </select>
+        <i class="uil uil-filter"></i>
+      </div>
+    </form>
+
+    <div class="item-group">
+      <!-- card -->
+      <a class="card card-produk" id="jenis1">
+        <img src="../img/produk/good-faces-E0cTcs52a14-unsplash.jpg" alt="" class="img-top">
+        <div class="card-body">
+          <div class="card-title">
+            <span class="card-name">
+              Hijab Instan by Humairah
+            </span> 
+          </div>
+          <span class="card-size">Size: M</span>
+          <h5 class="card-price">IDR 35.000</h5>
+          <div class="add-to-cart">
+            <button class="btn btn-add-cart" data-toggle="tooltip" data-placement="top" title="Tambahkan ke Keranjang Belanja">
+              <i class="uil uil-plus"></i> Keranjang
+            </button>
+          </div>
+        </div>
+      </a>
+      <!-- end Card -->
+
+      <!-- card -->
+      <a class="card card-produk" id="jenis2">
+        <img src="../img/produk/muhammad-ruqi-yaddin-oHNC_IHRBrI-unsplash.jpg" alt="" class="img-top">
+        <div class="card-body">
+          <div class="card-title">
+            <span class="card-name">
+              Hijab Segiempat by Humairah
+            </span> 
+          </div>
+          <span class="card-size">Size: M</span>
+          <h5 class="card-price">IDR 35.000</h5>
+          <div class="add-to-cart">
+            <button class="btn btn-add-cart" data-toggle="tooltip" data-placement="top" title="Tambahkan ke Keranjang Belanja">
+              <i class="uil uil-plus"></i> Keranjang
+            </button>
+          </div>
+        </div>
+      </a>
+      <!-- end Card -->
+
+      <!-- card -->
+      <a class="card card-produk" id="jenis3">
+        <img src="../img/produk/raamin-ka-IWqXDFBcM7Y-unsplash.jpg" alt="" class="img-top">
+        <div class="card-body">
+          <div class="card-title">
+            <span class="card-name">
+              Baju Muslim by Humairah
+            </span> 
+          </div>
+          <span class="card-size">Size: M</span>
+          <h5 class="card-price">IDR 35.000</h5>
+          <div class="add-to-cart">
+            <button class="btn btn-add-cart" data-toggle="tooltip" data-placement="top" title="Tambahkan ke Keranjang Belanja">
+              <i class="uil uil-plus"></i> Keranjang
+            </button>
+          </div>
+        </div>
+      </a>
+      <!-- end Card -->
+
+      <!-- card -->
+      <a class="card card-produk" id="jenis4">
+        <img src="../img/produk/songkok-hitam-polos-wadimor.jpg" alt="" class="img-top">
+        <div class="card-body">
+          <div class="card-title">
+            <span class="card-name">
+              Aksesoris by Humairah
+            </span> 
+          </div>
+          <span class="card-size">Size: M</span>
+          <h5 class="card-price">IDR 35.000</h5>
+          <div class="add-to-cart">
+            <button class="btn btn-add-cart" data-toggle="tooltip" data-placement="top" title="Tambahkan ke Keranjang Belanja">
+              <i class="uil uil-plus"></i> Keranjang
+            </button>
+          </div>
+        </div>
+      </a>
+      <!-- end Card -->
+
+      <!-- card -->
+      <a class="card card-produk" id="jenis4">
+        <img src="../img/produk/eirmuse_misry_caps_by_eirmuse_peci_kopiah_lipat_gaya_mesir_full03_hybeg9lf.jpg" alt="" class="img-top">
+        <div class="card-body">
+          <div class="card-title">
+            <span class="card-name">
+              Aksesoris by Humairah
+            </span> 
+          </div>
+          <span class="card-size">Size: M</span>
+          <h5 class="card-price">IDR 35.000</h5>
+          <div class="add-to-cart">
+            <button class="btn btn-add-cart" data-toggle="tooltip" data-placement="top" title="Tambahkan ke Keranjang Belanja">
+              <i class="uil uil-plus"></i> Keranjang
+            </button>
+          </div>
+        </div>
+      </a>
+      <!-- end Card -->
+
+    </div>
+    
+  </section>
+
+  <!-- Footer -->
+  <section class="container-fluid bg-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-4 mt-5">
+          <h4>Unni Korean Group</h4>
+          <ul class="link-footer">
+            <li>Unni Korean Food</li>
+            <li>Unni Korean Rent Car</li>
+            <li>Unni Korean Fashion</li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-4 mt-5">
+          <h4>Unni Korean Fashion</h4>
+          <ul class="link-footer">
+            <li>Tentang Kami</li>
+            <li>Kontak</li>
+            <li>Kebijakan Pengguna</li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-4 mt-5">
+          <h4>Social Media</h4>
+          <ul class="link-footer">
+            <li><a href="https://www.instagram.com/unnikoreanfood/" target="_blank"><i class="uil uil-instagram"></i> @UnniKoreanFood</a></li>
+            <li><a href="https://www.facebook.com/unni.kfood" target="_blank"><i class="uil uil-facebook"></i> Unni Korean Food</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer mt-auto">
+    <span>© 2021 Unni - Toko Online - Hijab by Humairah. All Rights Reserved. <a href="https://adigagas.github.io/adigagas/page/index.html" target="_blank">adigagas</a></span>
+  </footer>
+  <!-- end Footer -->
+
+  <!-- Back to Top -->
+  <a href="#" class="back-top">
+    <i class="uil uil-angle-up"></i>
+  </a>
+
+  <script src="../vendor/client/jquery/jquery-3.5.1.min.js"></script>
+  <script src="../vendor/client/jquery/popper.min.js"></script>
+  <script src="../vendor/client/bootstrap/js/bootstrap.js"></script>
+  <script src="../js/smooth-scroll.polyfills.min.js"></script>
+  <script src="../js/script.js"></script>
+
+  <script>
+    var scroll = new SmoothScroll('a[href*="#"]');
+
+    $(function () {
+			$('[data-toggle="tooltip"]').tooltip();
+		});
+  </script>
+
+  <script>
+    function hideCard() {
+      var hide = document.querySelectorAll('.card-produk');
+        
+      for (let index = 0; index < hide.length; index++) {
+        hide[index].classList.add('hide-card');
+      };
+    }
+
+    function filter() {
+      // ambil value filter
+      var filter = document.getElementById('filterPencarian').value;
+      
+      // jika semua
+      if(filter == 'semua') {
+        var show = document.querySelectorAll('.card-produk');
+
+        for (let index = 0; index < show.length; index++) {
+          show[index].classList.remove('hide-card');
+        };
+      }
+
+      // jika jenis1 - hijab instan
+      if(filter == 'jenis1') {
+        hideCard();
+        var show = document.querySelectorAll('#jenis1');
+
+        for (let index = 0; index < show.length; index++) {
+          show[index].classList.remove('hide-card');
+        };
+        
+      }
+
+      // jika jenis2 - hijab segiempat
+      if(filter == 'jenis2') {
+        hideCard();
+        var show = document.querySelectorAll('#jenis2');
+
+        for (let index = 0; index < show.length; index++) {
+          show[index].classList.remove('hide-card');
+        };
+      }
+
+      // jika jenis3 - baju muslim
+      if(filter == 'jenis3') {
+        hideCard();
+        var show = document.querySelectorAll('#jenis3');
+
+        for (let index = 0; index < show.length; index++) {
+          show[index].classList.remove('hide-card');
+        };
+      }
+
+      // jika jenis4 - aksesoris
+      if(filter == 'jenis4') {
+        hideCard();
+        var show = document.querySelectorAll('#jenis4');
+
+        for (let index = 0; index < show.length; index++) {
+          show[index].classList.remove('hide-card');
+        };
+      }
+    }
+  </script>
+</body>
+</html>

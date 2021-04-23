@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hijab by Humairah</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="../vendor/client/bootstrap/css/bootstrap.css">
+  <!-- unicons icon libs -->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+  <!-- Custom CSS Toko Hijab by Humairah -->
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white">
+    <a class="navbar-brand" href="index.html"><img src="../img/brand/logo.png" alt=""></a>
+    <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="uil uil-draggabledots"></i>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Beranda</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#Belanja" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Belanja <i class="uil uil-angle-down"></i>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="katalog.html">Semua</a>
+            <a class="dropdown-item" href="#">Hijab</a>
+            <a class="dropdown-item" href="#">Hijab</a>
+            <a class="dropdown-item" href="#">Hijab</a>
+            <a class="dropdown-item" href="#">Hijab</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#konfirmasi">Konfirmasi</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#tentang">Tentang</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#kontak">Kontak</a>
+        </li>
+      </ul>
+      <span class="nav-cart">
+        <a href="">Keranjang <i class="uil uil-shopping-bag"></i> <span class="badge badge-primary">99+</span></a>
+      </span>
+    </div>
+  </nav>
+  <!-- end Navbar -->
+
+  <section class="container full-content">
+    <form class="checkout-wrapper">
+      <!-- page keranjang belanja -->
+      <div class="checkout-page active" id="pageCart">
+        <h5 class="page-title">Keranjang Belanja</h5>
+        <div class="cart-wrapper">
+          <div class="cart-list">
+            <img src="../img/produk/good-faces-E0cTcs52a14-unsplash.jpg" alt="" class="cart-img">
+            <div class="cart-body">
+              <h6 class="cart-name">Hijab Segiempat by Humairah</h6>
+              <span class="cart-size">Size: M</span>
+              <span class="cart-price">IDR 30.000</span>
+              <div class="qty-group">
+                <button class="qty-min" id="qtyMin" data-target="#qtyCart"><i class="uil uil-minus"></i></button>
+                <input type="number" name="" id="qtyCart" class="input-quantity" value="2" min="1" max="12" disabled>
+                <button class="qty-plus" id="qtyPlus" data-target="#qtyCart"><i class="uil uil-plus"></i></button>
+              </div>
+              <span class="cart-total">IDR 60.000</span>
+            </div>
+            <div class="cart-delete">
+              <a class="btn-del-cart"><i class="uil uil-trash"></i></a>
+            </div>
+          </div>
+
+          <div class="cart-list">
+            <img src="../img/produk/good-faces-E0cTcs52a14-unsplash.jpg" alt="" class="cart-img">
+            <div class="cart-body">
+              <h6 class="cart-name">Hijab Segiempat by Humairah</h6>
+              <span class="cart-size">Size: M</span>
+              <span class="cart-price">IDR 30.000</span>
+              <div class="qty-group">
+                <button class="qty-min" id="qtyMin" data-target="#qtyCart2"><i class="uil uil-minus"></i></button>
+                <input type="number" name="" id="qtyCart2" class="input-quantity" value="2" min="1" max="7" disabled>
+                <button class="qty-plus" id="qtyPlus" data-target="#qtyCart2"><i class="uil uil-plus"></i></button>
+              </div>
+              <span class="cart-total" id="totalPrice">IDR 60.000</span>
+            </div>
+            <div class="cart-delete">
+              <a class="btn-del-cart"><i class="uil uil-trash"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <a href="katalog.html"><i class="uil uil-arrow-left"></i> Lanjut Belanja</a>
+          </div>
+          <div class="col text-right">
+            <a data-page="#pagePengiriman" id="toPage" class="btn btn-primary">Lanjut</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- page pengiriman -->
+      <div class="checkout-page" id="pagePengiriman">
+        <h5 class="page-title">Pengiriman</h5>
+        <div class="row mt-4">
+          <div class="col">
+            <h6>Data Pembeli</h6>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6 col-lg-4">
+            <label for="nama">Nama Terang</label>
+            <input type="text" class="form-control" id="nama" maxlength="40" placeholder="e.g: Gagas Adi">
+          </div>
+          <div class="form-group col-md-6 col-lg-4">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="e.g: gagasadi@mail.co">
+          </div>
+          <div class="form-group col-md-6 col-lg-4">
+            <label for="no_hp">No. Hp</label>
+            <input type="no_hp" class="form-control" id="no_hp" maxlength="13" placeholder="e.g: 082711xxxxxx">
+          </div>
+        </div>
+
+        <div class="row mt-4">
+          <div class="col">
+            <h6>Data Alamat</h6>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6 col-lg-4">
+            <label for="provinsi">Provinsi</label>
+            <select class="custom-select" id="provinsi">
+              <option selected>Pilih Provinsi</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+          <div class="form-group col-md-6 col-lg-4">
+            <label for="kota">Kota/Kabupaten</label>
+            <select class="custom-select" id="kota">
+              <option selected>Pilih Kota/Kabupaten</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+          <div class="form-group col-md-6 col-lg-4">
+            <label for="kecamatan">Kecamatan</label>
+            <select class="custom-select" id="kecamatan">
+              <option selected>Pilih Kecamatan</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+          <div class="form-group col-md-6 col-lg-4">
+            <label for="kode_pos">Kode Pos</label>
+            <input class="form-control" type="text" name="kode_pos" id="kode_pos" maxlength="5" placeholder="e.g: 68219">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6 col-lg-4">
+            <label for="alamat">Alamat Lengkap</label>
+            <textarea class="form-control" id="alamat" rows="3" placeholder="e.g: Jalan Sumatra no.9 RW.2 RT.6"></textarea>
+          </div>
+          <div class="form-group col-md-6 col-lg-4">
+            <label for="catatan">Catatan</label>
+            <textarea class="form-control" id="catatan" rows="3" placeholder="e.g: taruh paket di lobby"></textarea>
+          </div>
+        </div>
+
+        <div class="row mt-2">
+          <div class="col text-right">
+            <a data-page="#pageCart"  id="toPage" class="btn btn-secondary">Kembali</a>
+            <a data-page="#pagePembayaran" id="toPage" class="btn btn-primary">Lanjut</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- page pembayaran -->
+      <div class="checkout-page" id="pagePembayaran">
+        <h5 class="page-title">Metode Pembayaran</h5>
+
+        <div class="row">
+          <div class="col">
+            <h6 class="mt-3">Transfer Bank</h6>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 col-lg-4">
+            <div class="card-border-left-orange">
+              <img src="../img/other/36384348ef9d7bfff66da6da9e975d56.png" alt="logo-bni" class="img-payment-logo">
+              <h6>BNI a.n Firza Arinda Mufqi</h6>
+              <span>No. Rekening 0643526453</span>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card-border-left-blue">
+              <img src="../img/other/logo-bcapng-32694.png" alt="" class="img-payment-logo">
+              <h6>BCA a.n Firza Arinda Mufqi</h6>
+              <span>No. Rekening 1200525856</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <h6 class="mt-3">Digital Wallet</h6>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 col-lg-4">
+            <div class="card-border-left-purple">
+              <img src="../img/other/ovo-logo.png" alt="logo-bni" class="img-payment-logo">
+              <h6>OVO a.n Unni korean food</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-3">
+          <div class="col">
+            <p>Klik/Tap buat pesanan untuk membuat pesanan anda.</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col text-right">
+            <a data-page="#pagePengiriman" id="toPage" class="btn btn-secondary">Kembali</a>
+            <a data-page="#pageKonfirmasi" id="toPage" class="btn btn-primary">Buat Pesanan</a>
+          </div>
+        </div>
+        
+      </div>
+
+      <!-- page konfirmasi pembayaran -->
+      <div class="checkout-page" id="pageKonfirmasi">
+        <h5 class="page-title">Konfirmasi Pembayaran</h5>
+        <div class="row">
+          <div class="col">
+            <a href="index.html"><i class="uil uil-arrow-left"></i> Kembali belanja Belanja</a>
+          </div>
+          <div class="col text-right">
+            <a class="btn-page-next">Konfirmasi Pembayaran</a>
+          </div>
+        </div>
+      </div>
+
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <section class="container-fluid bg-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-4 mt-5">
+          <h4>Unni Korean Group</h4>
+          <ul class="link-footer">
+            <li>Unni Korean Food</li>
+            <li>Unni Korean Rent Car</li>
+            <li>Unni Korean Fashion</li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-4 mt-5">
+          <h4>Unni Korean Fashion</h4>
+          <ul class="link-footer">
+            <li>Tentang Kami</li>
+            <li>Kontak</li>
+            <li>Kebijakan Pengguna</li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-4 mt-5">
+          <h4>Social Media</h4>
+          <ul class="link-footer">
+            <li><a href="https://www.instagram.com/unnikoreanfood/" target="_blank"><i class="uil uil-instagram"></i> @UnniKoreanFood</a></li>
+            <li><a href="https://www.facebook.com/unni.kfood" target="_blank"><i class="uil uil-facebook"></i> Unni Korean Food</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer mt-auto">
+    <span>© 2021 Unni - Toko Online - Hijab by Humairah. All Rights Reserved. <a href="https://adigagas.github.io/adigagas/page/index.html" target="_blank">adigagas</a></span>
+  </footer>
+  <!-- end Footer -->
+
+  <!-- Back to Top -->
+  <a href="#" class="back-top">
+    <i class="uil uil-angle-up"></i>
+  </a>
+
+  <script src="../vendor/client/jquery/jquery-3.5.1.min.js"></script>
+  <script src="../vendor/client/jquery/popper.min.js"></script>
+  <script src="../vendor/client/bootstrap/js/bootstrap.js"></script>
+  <script src="../js/smooth-scroll.polyfills.min.js"></script>
+  <script src="../js/script.js"></script>
+
+  <script>
+    var scroll = new SmoothScroll('a[href*="#"]');
+  </script>
+
+  <script>
+    $("[id='toPage']").click(function(e) {
+      e.preventDefault();
+      var page = $(this).attr("data-page");
+      $(".checkout-page.active").removeClass("active");
+      $(page).addClass("active");
+    });
+
+    $("[id='qtyPlus']").click(function(e) {
+      e.preventDefault();
+
+      var target = $(this).attr('data-target');
+      var max = $(target).attr('max');
+      
+      $(target).val(function(i, oldVal) {
+        if(oldVal < parseInt(max)) {
+          return ++oldVal;
+        } 
+
+        if(oldVal >= parseInt(max)) {
+          return oldVal;
+        }
+      });
+    });
+
+    $("[id='qtyMin']").click(function(e) {
+      e.preventDefault();
+
+      var target = $(this).attr('data-target');
+      var min = $(target).attr('min');
+      
+      $(target).val(function(i, oldVal) {
+        if(oldVal > parseInt(min)) {
+          return --oldVal;
+        } 
+
+        if(oldVal <= parseInt(min)) {
+          return oldVal;
+        }
+      });
+    });
+
+  </script>
+</body>
+</html>

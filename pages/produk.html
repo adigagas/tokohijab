@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hijab by Humairah</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="../vendor/client/bootstrap/css/bootstrap.css">
+  <!-- unicons icon libs -->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+  <!-- Custom CSS Toko Hijab by Humairah -->
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white">
+    <a class="navbar-brand" href="index.html"><img src="../img/brand/logo.png" alt=""></a>
+    <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="uil uil-draggabledots"></i>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Beranda</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#Belanja" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Belanja <i class="uil uil-angle-down"></i>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="katalog.html">Semua</a>
+            <a class="dropdown-item" href="#">Hijab</a>
+            <a class="dropdown-item" href="#">Hijab</a>
+            <a class="dropdown-item" href="#">Hijab</a>
+            <a class="dropdown-item" href="#">Hijab</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#konfirmasi">Konfirmasi</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#tentang">Tentang</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#kontak">Kontak</a>
+        </li>
+      </ul>
+      <span class="nav-cart">
+        <a href="cart.html">Keranjang <i class="uil uil-shopping-bag"></i> <span class="badge badge-primary">99+</span></a>
+      </span>
+    </div>
+  </nav>
+  <!-- end Navbar -->
+
+  <section class="container">
+    <div class="produk-wrap">
+      <div class="produk-title">
+        <a href="" onclick="goBack()" id="backLink"><i class="uil uil-arrow-left"></i></a> Detail Produk
+      </div>
+      <div class="produk-body">
+        <div class="produk-img">
+          <img src="../img/produk/good-faces-E0cTcs52a14-unsplash.jpg" alt="">
+        </div>
+        <div class="produk-info">
+          <div class="produk-name">
+            <h5>Hijab Instan by Humairah</h5>
+          </div>
+          <div class="produk-size">
+            <span>Size: M</span>
+          </div>
+          <div class="produk-price">
+            <span>IDR 30.000</span>
+          </div>
+          <div class="produk-quantity">
+            <span>Kuantitas</span>
+            <div class="qty-group">
+              <button class="qty-min" id="qtyMin" data-target="#qtyCart"><i class="uil uil-minus"></i></button>
+              <input type="number" name="" id="qtyCart" class="input-quantity" value="1" min="1" max="12" disabled>
+              <button class="qty-plus" id="qtyPlus" data-target="#qtyCart"><i class="uil uil-plus"></i></button>
+            </div>
+            <span>tersisa 12 buah</span>
+          </div>
+          <div class="produk-btn-group">
+            <button class="btn-cart"><i class="uil uil-plus"></i>Masukkan Keranjang</button>
+          </div>
+          <div class="produk-desc">
+            <div class="desc-title">
+              <h6>Deskripsi</h6>
+            </div>
+            <div class="desc-body">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas id voluptatem itaque consequatur eius ut sunt, voluptatum perspiciatis quam reiciendis nesciunt laborum repellat. Quibusdam, blanditiis asperiores similique voluptatibus quae repellat!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <section class="container-fluid bg-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-4 mt-5">
+          <h4>Unni Korean Group</h4>
+          <ul class="link-footer">
+            <li>Unni Korean Food</li>
+            <li>Unni Korean Rent Car</li>
+            <li>Unni Korean Fashion</li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-4 mt-5">
+          <h4>Unni Korean Fashion</h4>
+          <ul class="link-footer">
+            <li>Tentang Kami</li>
+            <li>Kontak</li>
+            <li>Kebijakan Pengguna</li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-4 mt-5">
+          <h4>Social Media</h4>
+          <ul class="link-footer">
+            <li><a href="https://www.instagram.com/unnikoreanfood/" target="_blank"><i class="uil uil-instagram"></i> @UnniKoreanFood</a></li>
+            <li><a href="https://www.facebook.com/unni.kfood" target="_blank"><i class="uil uil-facebook"></i> Unni Korean Food</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer mt-auto">
+    <span>© 2021 Unni - Toko Online - Hijab by Humairah. All Rights Reserved. <a href="https://adigagas.github.io/adigagas/page/index.html" target="_blank">adigagas</a></span>
+  </footer>
+  <!-- end Footer -->
+
+  <!-- Back to Top -->
+  <a href="#" class="back-top">
+    <i class="uil uil-angle-up"></i>
+  </a>
+
+  <script src="../vendor/client/jquery/jquery-3.5.1.min.js"></script>
+  <script src="../vendor/client/jquery/popper.min.js"></script>
+  <script src="../vendor/client/bootstrap/js/bootstrap.js"></script>
+  <script src="../js/smooth-scroll.polyfills.min.js"></script>
+  <script src="../js/script.js"></script>
+
+  <script>
+    var scroll = new SmoothScroll('a[href*="#"]');
+
+    $(function () {
+			$('[data-toggle="tooltip"]').tooltip();
+		});
+  </script>
+
+  <script>
+    document.getElementById("backLink").addEventListener("click", function(event){
+      event.preventDefault()
+    });
+
+    function goBack() {
+      window.history.back();
+    }
+
+    $("[id='qtyPlus']").click(function(e) {
+      e.preventDefault();
+
+      var target = $(this).attr('data-target');
+      var max = $(target).attr('max');
+      
+      $(target).val(function(i, oldVal) {
+        if(oldVal < parseInt(max)) {
+          return ++oldVal;
+        } 
+
+        if(oldVal >= parseInt(max)) {
+          return oldVal;
+        }
+      });
+    });
+
+    $("[id='qtyMin']").click(function(e) {
+      e.preventDefault();
+
+      var target = $(this).attr('data-target');
+      var min = $(target).attr('min');
+      
+      $(target).val(function(i, oldVal) {
+        if(oldVal > parseInt(min)) {
+          return --oldVal;
+        } 
+
+        if(oldVal <= parseInt(min)) {
+          return oldVal;
+        }
+      });
+    });
+  </script>
+</body>
+</html>
