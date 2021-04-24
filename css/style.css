@@ -401,12 +401,23 @@ section.container-fluid.full-content {
 
 .qty-group {
     background-color: white;
-    border: 1px solid var(--gray);
 }
 
 .qty-group button {
     background-color: var(--gray);
-    border: 0px;
+    color: white;
+    border: 2px solid var(--gray);
+    transition: all .3s ease-in-out;
+}
+
+.qty-group button:hover {
+    background-color: var(--primary-50);
+    border-color: var(--primary-50);
+}
+
+.qty-group button:active {
+    background-color: var(--primary);
+    border-color: var(--primary);
 }
 
 .qty-group input {
@@ -414,6 +425,12 @@ section.container-fluid.full-content {
     outline: none;
     border: 0px;
     text-align: center;
+    border-bottom: 2px solid var(--gray);
+    transition: all .4s ease-in-out;
+}
+
+.qty-group:focus-within input {
+    border-color: var(--primary);
 }
 
 /* card produk */
