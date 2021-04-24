@@ -326,7 +326,7 @@ section.container-fluid.full-content {
     display: flex;
     justify-content: center;
     width: calc(100% - 10px);
-    height: 400px;
+    height: calc(100vw - 40px);
     background-color: #fff;
     margin: 5px;
     border-radius: .25rem;
@@ -360,6 +360,7 @@ section.container-fluid.full-content {
 .produk-quantity {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     color: gray;
     margin: 1rem 0rem;
 }
@@ -742,6 +743,11 @@ a.card .card-title {
         width: calc(50% - 10px);
     }
 
+    .produk-img {
+        width: calc(100% - 10px);
+        height: calc(540px - 10px);
+    }
+
     .img-top {
         height: 260px;
     }
@@ -766,6 +772,11 @@ a.card .card-title {
 
     .carousel-item img {
         height: 600px;
+    }
+
+    .produk-img {
+        width: calc(100% - 10px);
+        height: calc(720px - 10px);
     }
 
     .qty-group {
