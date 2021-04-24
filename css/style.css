@@ -174,11 +174,6 @@ section {
     transition: all .4s ease-in-out;
 }
 
-section.container {
-    padding-left: 0px;
-    padding-right: 0px;
-}
-
 section.container.full-content,
 section.container-fluid.full-content {
     min-height: calc(100vh - 80px - 355px);
@@ -713,6 +708,11 @@ a.card .card-title {
 
 /* responsive */
 @media only screen and (min-width: 576px) {
+    section.container {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
     a.card {
         width: calc(50% - 10px);
     }
