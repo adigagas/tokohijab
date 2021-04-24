@@ -204,6 +204,14 @@ section.container-fluid.full-content {
     object-fit: cover;
 }
 
+.carousel-caption-title {
+    font-size: 1.5rem !important;
+}
+
+.carousel-item .btn.btn-special {
+    font-size: 1rem;
+}
+
 /* input search */
 .search-group {
     display: flex;
@@ -723,6 +731,14 @@ a.card .card-title {
 }
 
 @media only screen and (min-width: 768px) {
+    .carousel-caption-title {
+        font-size: 2rem !important;
+    }
+
+    .carousel-item .btn.btn-special {
+        font-size: 1.25rem !important;
+    }
+
     a.card {
         width: 230px;
     }
