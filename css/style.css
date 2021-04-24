@@ -202,6 +202,7 @@ section.container-fluid.full-content {
 .carousel-item img {
     height: 350px;
     object-fit: cover;
+    filter: brightness(75%);
 }
 
 .carousel-caption-title {
