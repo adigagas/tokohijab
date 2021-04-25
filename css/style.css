@@ -153,15 +153,6 @@ a:hover {
     padding: 8px 0px;
 }
 
-.navbar-nav::after {
-    display: inline-block;
-    content: "";
-    background-color: var(--gray);
-    width: 1px;
-    height: auto;
-    margin: 0px 8px;
-}
-
 .dropdown-toggle::after {
     margin-left: 0px;
     border: 0px;
@@ -182,12 +173,14 @@ section.container-fluid.full-content {
 .section-title {
     text-align: center;
     color: var(--primary);
+    font-size: 1rem;
 }
 
 .section-subtitle {
     text-align: center;
     text-transform: uppercase;
     padding-bottom: 3rem;
+    font-size: 1.25rem;
 }
 
 /* carousel */
@@ -499,6 +492,10 @@ a.card .card-title {
 }
 
 /* how to order */
+.how-to {
+    padding: 5px;
+}
+
 .how-to img.how-to-lg {
     display: none;
     width: 100%;
@@ -740,6 +737,10 @@ a.card .card-title {
         padding-right: 0px;
     }
 
+    .section-subtitle {
+        font-size: 1.5rem;
+    }
+
     a.card {
         width: calc(50% - 10px);
     }
@@ -755,6 +756,14 @@ a.card .card-title {
 }
 
 @media only screen and (min-width: 768px) {
+    .section-title {
+        font-size: 1.25rem;
+    }
+
+    .section-subtitle {
+        font-size: 2rem;
+    }
+
     .carousel-caption-title {
         font-size: 2rem !important;
     }
@@ -788,7 +797,22 @@ a.card .card-title {
 
 @media only screen and (min-width: 992px) {
     .nav-cart {
-        padding: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-cart::before {
+        display: inline-block;
+        content: "";
+        background-color: var(--gray);
+        width: 1px;
+        height: 40px;
+        margin: 0px 8px;
+    }
+
+    .section-subtitle {
+        font-size: 2.5rem;
     }
 
     .how-to img.how-to-lg {
