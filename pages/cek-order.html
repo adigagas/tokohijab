@@ -23,10 +23,10 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item ">
+        <li class="nav-item active">
           <a class="nav-link" href="index.html">Beranda</a>
         </li>
-        <li class="nav-item active">
+        <li class="nav-item">
           <a class="nav-link" href="katalog.html">Belanja</a>
         </li>
         <li class="nav-item">
@@ -46,33 +46,67 @@
   </nav>
   <!-- end Navbar -->
 
+  <!-- Banner -->
   <section class="container">
-
-    <form action="" class="search-group">
-      <div class="search-title">
-        Pencarian
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="../img/banner/good-faces-LM8dFpmzg9U-unsplash.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-block d-md-block">
+            <h2 class="carousel-caption-title">HIJAB TRENDING</h2>
+            <p>Terbaru</p>
+            <a href="#" class="btn btn-special">LIHAT SEKARANG</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="../img/banner/ahmad-azwan-azman-iKNrth2nSdQ-unsplash.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-block d-md-block">
+            <h2 class="carousel-caption-title">RAMADHAN SALE</h2>
+            <p>Dapatkan diskon ramadhan untuk produk tertentu.</p>
+            <a href="#" class="btn btn-special">LIHAT SEKARANG</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="../img/banner/satria-sp-UOmpylL_UaI-unsplash.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-block d-md-block">
+            <h2 class="carousel-caption-title">BEBAS ONGKIR</h2>
+            <p>Untuk wilayah Bondowoso selama bulan Ramadhan.</p>
+            <a href="#" class="btn btn-special">LIHAT SEKARANG</a>
+          </div>
+        </div>
       </div>
+      <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </section>
+  <!-- end Banner -->
 
-      <div class="search-input-group">
-        <i class="uil uil-search"></i>
-        <input type="text" class="search-input">
-      </div>
+  <section class="container">
+    <h5 class="section-title">
+      Katalog
+    </h5>
+    <h2 class="section-subtitle">Produk Terbaru Hijab by Humairah</h2>
 
-      <div class="filter-group">
-        <select class="filter-select custom-select" onchange="filter()" id="filterPencarian">
-          <option selected value="semua">Semua</option>
-          <option value="jenis1">Hijab Instan</option>
-          <option value="jenis2">Hijab Segiempat</option>
-          <option value="jenis3">Baju Muslim</option>
-          <option value="jenis4">Aksesoris</option>
-        </select>
-        <i class="uil uil-filter"></i>
+    <div class="row mb-2">
+      <div class="col text-right">
+        <a href="katalog.html">Lebih Lengkap <i class="uil uil-angle-double-right"></i></a>
       </div>
-    </form>
+    </div>
 
     <div class="item-group">
       <!-- card -->
-      <a class="card card-produk" id="jenis1">
+      <a class="card" href="produk.html">
         <img src="../img/produk/good-faces-E0cTcs52a14-unsplash.jpg" alt="" class="img-top">
         <div class="card-body">
           <div class="card-title">
@@ -92,7 +126,7 @@
       <!-- end Card -->
 
       <!-- card -->
-      <a class="card card-produk" id="jenis2">
+      <a class="card">
         <img src="../img/produk/muhammad-ruqi-yaddin-oHNC_IHRBrI-unsplash.jpg" alt="" class="img-top">
         <div class="card-body">
           <div class="card-title">
@@ -112,8 +146,8 @@
       <!-- end Card -->
 
       <!-- card -->
-      <a class="card card-produk" id="jenis3">
-        <img src="../img/produk/raamin-ka-IWqXDFBcM7Y-unsplash.jpg" alt="" class="img-top">
+      <a class="card">
+        <img src="../img/produk/eirmuse_misry_caps_by_eirmuse_peci_kopiah_lipat_gaya_mesir_full03_hybeg9lf.jpg" alt="" class="img-top">
         <div class="card-body">
           <div class="card-title">
             <span class="card-name">
@@ -132,27 +166,7 @@
       <!-- end Card -->
 
       <!-- card -->
-      <a class="card card-produk" id="jenis4">
-        <img src="../img/produk/songkok-hitam-polos-wadimor.jpg" alt="" class="img-top">
-        <div class="card-body">
-          <div class="card-title">
-            <span class="card-name">
-              Aksesoris by Humairah
-            </span> 
-          </div>
-          <span class="card-size">Size: M</span>
-          <h5 class="card-price">IDR 35.000</h5>
-          <div class="add-to-cart">
-            <button class="btn btn-add-cart" data-toggle="tooltip" data-placement="top" title="Tambahkan ke Keranjang Belanja">
-              <i class="uil uil-plus"></i> Keranjang
-            </button>
-          </div>
-        </div>
-      </a>
-      <!-- end Card -->
-
-      <!-- card -->
-      <a class="card card-produk" id="jenis4">
+      <a class="card">
         <img src="../img/produk/eirmuse_misry_caps_by_eirmuse_peci_kopiah_lipat_gaya_mesir_full03_hybeg9lf.jpg" alt="" class="img-top">
         <div class="card-body">
           <div class="card-title">
@@ -171,9 +185,42 @@
       </a>
       <!-- end Card -->
 
+      <!-- card -->
+      <a class="card">
+        <img src="../img/produk/eirmuse_misry_caps_by_eirmuse_peci_kopiah_lipat_gaya_mesir_full03_hybeg9lf.jpg" alt="" class="img-top">
+        <div class="card-body">
+          <div class="card-title">
+            <span class="card-name">
+              Aksesoris by Humairah
+            </span> 
+          </div>
+          <span class="card-size">Size: M</span>
+          <h5 class="card-price">IDR 35.000</h5>
+          <div class="add-to-cart">
+            <button class="btn btn-add-cart" data-toggle="tooltip" data-placement="top" title="Tambahkan ke Keranjang Belanja">
+              <i class="uil uil-plus"></i> Keranjang
+            </button>
+          </div>
+        </div>
+      </a>
+      <!-- end Card -->
     </div>
-    
+
   </section>
+
+  <!-- How to Order -->
+  <section class="container">
+    <h5 class="section-title">
+      How to
+    </h5>
+    <h2 class="section-subtitle">Cara Order/Melakukan Pemesanan</h2>
+
+    <div class="how-to">
+      <img src="../img/other/cara order.png" alt="" class="how-to-lg">
+      <img src="../img/other/cara order kecil.png" alt="" class="how-to-md">
+    </div>
+  </section>
+  <!-- end How to Order -->
 
   <!-- Footer -->
   <section class="container-fluid bg-white">
@@ -228,71 +275,6 @@
     $(function () {
 			$('[data-toggle="tooltip"]').tooltip();
 		});
-  </script>
-
-  <script>
-    function hideCard() {
-      var hide = document.querySelectorAll('.card-produk');
-        
-      for (let index = 0; index < hide.length; index++) {
-        hide[index].classList.add('hide-card');
-      };
-    }
-
-    function filter() {
-      // ambil value filter
-      var filter = document.getElementById('filterPencarian').value;
-      
-      // jika semua
-      if(filter == 'semua') {
-        var show = document.querySelectorAll('.card-produk');
-
-        for (let index = 0; index < show.length; index++) {
-          show[index].classList.remove('hide-card');
-        };
-      }
-
-      // jika jenis1 - hijab instan
-      if(filter == 'jenis1') {
-        hideCard();
-        var show = document.querySelectorAll('#jenis1');
-
-        for (let index = 0; index < show.length; index++) {
-          show[index].classList.remove('hide-card');
-        };
-        
-      }
-
-      // jika jenis2 - hijab segiempat
-      if(filter == 'jenis2') {
-        hideCard();
-        var show = document.querySelectorAll('#jenis2');
-
-        for (let index = 0; index < show.length; index++) {
-          show[index].classList.remove('hide-card');
-        };
-      }
-
-      // jika jenis3 - baju muslim
-      if(filter == 'jenis3') {
-        hideCard();
-        var show = document.querySelectorAll('#jenis3');
-
-        for (let index = 0; index < show.length; index++) {
-          show[index].classList.remove('hide-card');
-        };
-      }
-
-      // jika jenis4 - aksesoris
-      if(filter == 'jenis4') {
-        hideCard();
-        var show = document.querySelectorAll('#jenis4');
-
-        for (let index = 0; index < show.length; index++) {
-          show[index].classList.remove('hide-card');
-        };
-      }
-    }
   </script>
 </body>
 </html>
