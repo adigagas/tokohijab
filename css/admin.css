@@ -1,0 +1,33 @@
+.width-fit-content {
+    width: fit-content !important;
+}
+
+.btn-icon {
+    margin-bottom: 5px;
+}
+
+.btn-text {
+    display: none !important;
+}
+
+/* responsive */
+@media only screen and (min-width: 576px) {
+    .btn-icon {
+        margin-bottom: 0px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    
+
+}
+
+@media only screen and (min-width: 992px) {
+    .btn-text {
+        display: inline-block !important;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    
+}
