@@ -46,9 +46,6 @@
 }
 
 /* sidebar */
-.sidebar .sidebar-brand .sidebar-brand-toggled {
-    display: none;
-}
 
 .sidebar.toggled .sidebar-brand .sidebar-brand-toggled {
     display: contents;
@@ -84,8 +81,9 @@
 }
 
 @media only screen and (min-width: 768px) {
-    
-
+    .sidebar .sidebar-brand .sidebar-brand-toggled {
+        display: none;
+    }
 }
 
 @media only screen and (min-width: 992px) {
