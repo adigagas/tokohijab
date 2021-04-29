@@ -34,14 +34,16 @@
     <div id="wrapper">
 
         <!-- Sidebar -->
-        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+        <ul class="navbar-nav bg-white sidebar sidebar-light border-right accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
-                <div class="sidebar-brand-icon">
-                    <i class="fas fa-laugh-wink"></i>
+                <div class="sidebar-brand-toggled mx-3">
+                    <img src="../../img/brand/logo-sm.png" alt="">
                 </div>
-                <div class="sidebar-brand-text mx-3">TokoHijab</div>
+                <div class="sidebar-brand-text mx-3">
+                    <img src="../../img/brand/logo.png" alt="">
+                </div>
             </a>
 
             <!-- Divider -->
@@ -160,7 +162,86 @@
 
                     <!-- Content Row -->
                     <div class="row">
-                        <div class="col col-md-4 col-lg-3">
+                        <div class="col-lg-8">
+                            <div class="row">
+                                <!-- Pendapatan Bulan Ini -->
+                                <div class="col-lg-6 col-xl-4 mb-4">
+                                    <div class="card border-left-success">
+                                        <div class="card-body bg-white">
+                                            <div class="row no-gutters align-items-center">
+                                                <div class="col mr-2">
+                                                    <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                                                        Pendapatan</div>
+                                                    <div class="h5 mb-0 font-weight-bold text-gray-800">Rp. 400.000</div>
+                                                    <small>pendapatan bulan ini</small>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <i class="fas fa-wallet fa-2x text-gray-300"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Menunggu Konfirmasi -->
+                                <div class="col-lg-6 col-xl-4 mb-4">
+                                    <div class="card border-left-warning">
+                                        <div class="card-body">
+                                            <div class="row no-gutters align-items-center">
+                                                <div class="col mr-2">
+                                                    <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
+                                                        Menunggu Konfirmasi</div>
+                                                    <div class="h5 mb-0 font-weight-bold text-gray-800">12</div>
+                                                    <small><a href="">konfirmasi sekarang</a></small>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <i class="fas fa-receipt fa-2x text-gray-300"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Jumlah Produk -->
+                                <div class="col-lg-6 col-xl-4 mb-4">
+                                    <div class="card border-left-info">
+                                        <div class="card-body">
+                                            <div class="row no-gutters align-items-center">
+                                                <div class="col mr-2">
+                                                    <div class="text-xs font-weight-bold text-info text-uppercase mb-1">
+                                                        Produk</div>
+                                                    <div class="h5 mb-0 font-weight-bold text-gray-800">Rp. 400.000</div>
+                                                    <small>produk tersedia di toko</small>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <i class="fas fa-box-open fa-2x text-gray-300"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- chart pendapatan bulanan -->
+                                <div class="col-12">
+                                    <div class="card shadow mb-4">
+                                        <!-- Card Header - Dropdown -->
+                                        <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                            <h6 class="m-0 font-weight-bold text-primary">Grafik Pendapatan</h6>
+                                            <span>2020 v 2021</span>
+                                        </div>
+                                        <!-- Card Body -->
+                                        <div class="card-body">
+                                            <div class="chart-area">
+                                                <canvas id="myAreaChart"></canvas>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4">
                             <div class="card mb-4">
                                 <div class="card-body">
                                     <h5 class="card-title">Ini Card</h5>
@@ -243,30 +324,7 @@
     <script src="../../js/demo/datatables-demo.js"></script>
 
     <script>
-        function number_format(number, decimals, dec_point, thousands_sep) {
-            // *     example: number_format(1234.56, 2, ',', ' ');
-            // *     return: '1 234,56'
-            number = (number + '').replace(',', '').replace(' ', '');
-            var n = !isFinite(+number) ? 0 : +number,
-                prec = !isFinite(+decimals) ? 0 : Math.abs(decimals),
-                sep = (typeof thousands_sep === 'undefined') ? ',' : thousands_sep,
-                dec = (typeof dec_point === 'undefined') ? '.' : dec_point,
-                s = '',
-                toFixedFix = function(n, prec) {
-                var k = Math.pow(10, prec);
-                return '' + Math.round(n * k) / k;
-                };
-            // Fix for IE parseFloat(0.55).toFixed(0) = 0;
-            s = (prec ? toFixedFix(n, prec) : '' + Math.round(n)).split('.');
-            if (s[0].length > 3) {
-                s[0] = s[0].replace(/\B(?=(?:\d{3})+(?!\d))/g, sep);
-            }
-            if ((s[1] || '').length < prec) {
-                s[1] = s[1] || '';
-                s[1] += new Array(prec - s[1].length + 1).join('0');
-            }
-            return s.join(dec);
-        }
+
     </script>
 
 </body>
