@@ -10,6 +10,41 @@
     display: none !important;
 }
 
+/* text color */
+.text-pink {
+    color: #e83e8c !important;
+}
+
+/* background color */
+.bg-lightpink {
+    background-color: #fff8fb !important;
+}
+
+/* shadow */
+.shadow-lightpink {
+    box-shadow: 0px 0px 1.25rem #ffe1ef;
+}
+
+/* toggle btn */
+#sidebarToggleTop {
+    transition: all .25s ease-in-out;
+}
+
+#sidebarToggleTop i {
+    color: #e83e8c;
+}
+
+#sidebarToggleTop:hover {
+    background-color: #e83e8d27 !important;
+}
+
+#sidebarToggleTop:focus,
+#sidebarToggleTop:active {
+    border: 0px !important;
+    background-color: transparent !important;
+    box-shadow: 0px 0px 0px 0px transparent !important;
+}
+
 /* sidebar */
 .sidebar .sidebar-brand .sidebar-brand-toggled {
     display: none;
