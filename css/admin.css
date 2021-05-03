@@ -1,7 +1,35 @@
-.width-fit-content {
-    width: fit-content !important;
+/* link */
+a {
+    text-decoration: none;
+    color: black;
 }
 
+a:hover {
+    color: #e83e8c;
+    text-decoration: underline;
+}
+
+.link-icon {
+    font-size: 1rem;
+}
+
+.link-icon-sm {
+    font-size: .75rem;
+}
+
+.link-icon-lg {
+    font-size: 1.25rem;
+}
+
+.link-icon-xl {
+    font-size: 2rem;
+}
+
+a.link-icon:hover {
+    text-decoration: none;
+}
+
+/* button */
 .btn-icon {
     margin-bottom: 5px;
 }
@@ -46,7 +74,6 @@
 }
 
 /* sidebar */
-
 .sidebar.toggled .sidebar-brand .sidebar-brand-toggled {
     display: contents;
 }
@@ -61,6 +88,45 @@
 
 .sidebar-light .nav-item.active .nav-link i {
     color: #e83e8c !important;
+}
+
+/* form */
+.form-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: -8px;
+}
+
+.image-upload {
+    width: 350px;
+    padding: 8px;
+}
+
+.img-preview {
+    height: 350px;
+    background-color: white;
+    border-radius: .35rem;
+    border: 1px solid lightgray;
+    overflow: hidden;
+}
+
+.preview {
+    height: 350px;
+    width: 350px;
+    object-fit: cover;
+}
+
+.form-main {
+    flex: 2;
+    padding: 8px;
+}
+
+.custom-file-label {
+    padding-right: 80px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 /* pagpination */

@@ -64,7 +64,7 @@
             </li>
 
             <!-- Nav Item - Produk -->
-            <li class="nav-item">
+            <li class="nav-item active">
                 <a class="nav-link" href="produk.html">
                     <i class="fas fa-fw fa-box-open"></i>
                     <span>Produk</span></a>
@@ -88,7 +88,7 @@
             <hr class="sidebar-divider mt-4 mb-0">
 
             <!-- Nav Item - Akun -->
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link" href="akun.html">
                     <i class="fas fa-fw fa-key"></i>
                     <span>Akun</span></a>
@@ -153,51 +153,75 @@
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
 
-                    
-                    <div class="row">
-                        <div class="col-md-12 col-lg-9 col-xl-6">
-                            <!-- Page Heading -->
-                            <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                                <div>
-                                    <h1 class="h3 mb-2 text-gray-800">Akun</h1>
-                                    <p class="mb-4">Daftar akun admin.</p>
-                                </div>
-                                <a href="new-akun.html" class="btn btn-success shadow-sm"><i
-                                        class="fas fa-plus fa-sm text-white-50"></i> Akun Baru</a>
-                            </div>
+                    <!-- Page Heading -->
+                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                        <div>
+                            <h1 class="h3 mb-2 text-gray-800">Produk Baru</h1>
+                        </div>  
+                    </div>
 
-                            <!-- DataTales Example -->
-                            <div class="card shadow mb-4">
-                                <div class="card-body">
-                                    <div class="table-responsive">
-                                        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                                            <thead>
-                                                <tr>
-                                                    <th>Username</th>
-                                                    <th>Nama</th>
-                                                    <th width="55px">Aksi</th>
-                                                </tr>
-                                            </thead>
-                                            <tfoot>
-                                                <tr>
-                                                    <th>Username</th>
-                                                    <th>Nama</th>
-                                                    <th>Aksi</th>
-                                                </tr>
-                                            </tfoot>
-                                            <tbody>
-                                                <tr>
-                                                    <td>admin123</td>
-                                                    <td>Ummi Humairah</td>
-                                                    <td class="text-center">
-                                                        <a class="btn btn-sm btn-info btn-icon"><span class="btn-text">Detail</span> <i class="fas fa-plus fa-sm"></i></a>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                    <!-- DataTales Example -->
+                    <div class="card shadow mb-4">
+                        <div class="card-body">
+                            <form action="" class="form-flex">
+                                <div class="image-upload">
+                                    <div class="img-preview">
+                                        <img src="../../img/produk/good-faces-E0cTcs52a14-unsplash.jpg" alt="" class=" preview">
+                                    </div>
+                                    <div class="input-group mt-2 mb-3">
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+                                            <label class="custom-file-label" for="inputGroupFile01">iUASYd98Y Dyad YADYadasdadsad   8ASUD9 87ad980AudAUDU90 asdasd8ud 9u908ASDUD980ajad8hAS78H D807ashsd87dsh780h80h80H8h87hd8 07h870H8Dh87h87h78h87h</label>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                                <div class="form-main">
+                                    <div class="form-row">
+                                        <div class="form-group col-xl-9">
+                                            <label for="nama_produk">Nama Produk</label>
+                                            <input type="text" name="nama_produk" id="nama_produk" class="form-control">
+                                        </div>
+                                        <div class="form-group col-xl-3">
+                                            <label for="ukuran">Ukuran</label>
+                                            <input type="text" name="ukuran" id="ukuran" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-xl-6">
+                                            <label for="id_jenis">Jenis Produk</label>
+                                            <select name="id_jenis" id="id_jenis" class="form-control">
+                                                <option selected>Pilih jenis..</option>
+                                                <option value="1">Hijab Instan</option>
+                                                <option value="2">Hijab Segiempat</option>
+                                                <option value="3">Baju Muslim</option>
+                                                <option value="4">Akssesoris</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group col-xl-6">
+                                            <label for="harga">Harga Satuan</label>
+                                            <input type="text" name="harga" id="harga" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-xl-3">
+                                            <label for="stok">Stok Produk</label>
+                                            <input type="number" name="stok" id="stok" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-xl-6">
+                                            <label for="deskripsi">Deskripsi</label>
+                                            <textarea class="form-control" name="deskripsi" id="deskripsi" rows="6"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col text-right">
+                                            <a href="produk.html" class="btn btn-outline-secondary">Batalkan</a>
+                                            <button type="submit" name="submit" id="submit" class="btn btn-success">Tambah Produk Baru</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                     </div>
 

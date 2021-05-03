@@ -159,43 +159,50 @@
                             <!-- Page Heading -->
                             <div class="d-sm-flex align-items-center justify-content-between mb-4">
                                 <div>
-                                    <h1 class="h3 mb-2 text-gray-800">Akun</h1>
-                                    <p class="mb-4">Daftar akun admin.</p>
+                                    <h1 class="h3 mb-2 text-gray-800">Tambah Akun</h1>
                                 </div>
-                                <a href="new-akun.html" class="btn btn-success shadow-sm"><i
-                                        class="fas fa-plus fa-sm text-white-50"></i> Akun Baru</a>
                             </div>
 
                             <!-- DataTales Example -->
                             <div class="card shadow mb-4">
                                 <div class="card-body">
-                                    <div class="table-responsive">
-                                        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                                            <thead>
-                                                <tr>
-                                                    <th>Username</th>
-                                                    <th>Nama</th>
-                                                    <th width="55px">Aksi</th>
-                                                </tr>
-                                            </thead>
-                                            <tfoot>
-                                                <tr>
-                                                    <th>Username</th>
-                                                    <th>Nama</th>
-                                                    <th>Aksi</th>
-                                                </tr>
-                                            </tfoot>
-                                            <tbody>
-                                                <tr>
-                                                    <td>admin123</td>
-                                                    <td>Ummi Humairah</td>
-                                                    <td class="text-center">
-                                                        <a class="btn btn-sm btn-info btn-icon"><span class="btn-text">Detail</span> <i class="fas fa-plus fa-sm"></i></a>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
+                                    <form action="">
+                                        <div class="form-row">
+                                            <div class="form-group col">
+                                                <h5 class="text-dark">Form tambah akun</h5>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-group col">
+                                                <label for="nama_admin">Nama Admin</label>
+                                                <input type="text" class="form-control" id="nama_admin" name="nama_admin">
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-group col">
+                                                <label for="username">Username</label>
+                                                <input type="text" class="form-control" id="username" name="username">
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-group col">
+                                                <label for="password">Password</label>
+                                                <input type="password" class="form-control" id="password" name="nama">
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-group col">
+                                                <label for="confirm">Confirm Password</label>
+                                                <input type="password" class="form-control" id="confirm" name="confirm">
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-group col text-right">
+                                                <a href="akun.html" class="btn btn-outline-secondary">Batalkan</a>
+                                                <button type="submit" class="btn btn-success">Buat Akun Baru</button>
+                                            </div>
+                                        </div>
+                                    </form>
                                 </div>
                             </div>
                         </div>
