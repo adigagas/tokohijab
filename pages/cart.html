@@ -47,209 +47,88 @@
   <!-- end Navbar -->
 
   <section class="container full-content">
-    <form class="checkout-wrapper">
-      <!-- page keranjang belanja -->
-      <div class="checkout-page active" id="pageCart">
-        <h5 class="page-title">Keranjang Belanja</h5>
-        <div class="cart-wrapper">
-          <div class="cart-list">
-            <img src="../img/produk/good-faces-E0cTcs52a14-unsplash.jpg" alt="" class="cart-img">
-            <div class="cart-body">
-              <h6 class="cart-name">Hijab Segiempat by Humairah</h6>
-              <span class="cart-size">Size: M</span>
-              <span class="cart-price">IDR 30.000</span>
-              <div class="qty-group">
-                <button class="qty-min" id="qtyMin" data-target="#qtyCart"><i class="uil uil-minus"></i></button>
-                <input type="number" name="" id="qtyCart" class="input-quantity" value="2" min="1" max="12" disabled>
-                <button class="qty-plus" id="qtyPlus" data-target="#qtyCart"><i class="uil uil-plus"></i></button>
+    <div class="row justify-content-center">
+      <div class="col-xl-10">
+        <div class="card mb-4">
+          <div class="card-body card-form">
+            <div class="title-group">
+              <h5 class="card-title">Keranjang Belanja</h5>
+              <h5>3 Items</h5>
+            </div>
+            <hr class="dashed">
+            <!-- Cart -->
+            <div class="cart">
+              <!-- Item list -->
+              <div class="cart-list">
+                <img src="../img/produk/good-faces-E0cTcs52a14-unsplash.jpg" alt="" class="cart-img">
+                <div class="cart-body">
+                  <div class="cart-info">
+                    <h6 class="cart-name">Hijab Segiempat by Humairah</h6>
+                    <span class="cart-size">Ukuran: M</span>
+                    <h6 class="cart-price">Rp. 30.000</h6>
+                  </div>
+                  <div class="qty-group">
+                    <button class="qty-min" id="qtyMin" data-target="#qtyCart"><i class="uil uil-minus"></i></button>
+                    <input type="text" name="qty" id="qtyCart" class="input-quantity" value="2" min="1" max="12" disabled>
+                    <button class="qty-plus" id="qtyPlus" data-target="#qtyCart"><i class="uil uil-plus"></i></button>
+                  </div>
+                  <div class="cart-total text-right">
+                    <h6>Rp. 60.000</h6>
+                  </div>
+                </div>
               </div>
-              <span class="cart-total">IDR 60.000</span>
-            </div>
-            <div class="cart-delete">
-              <a class="btn-del-cart"><i class="uil uil-trash"></i></a>
-            </div>
-          </div>
-
-          <div class="cart-list">
-            <img src="../img/produk/good-faces-E0cTcs52a14-unsplash.jpg" alt="" class="cart-img">
-            <div class="cart-body">
-              <h6 class="cart-name">Hijab Segiempat by Humairah</h6>
-              <span class="cart-size">Size: M</span>
-              <span class="cart-price">IDR 30.000</span>
-              <div class="qty-group">
-                <button class="qty-min" id="qtyMin" data-target="#qtyCart2"><i class="uil uil-minus"></i></button>
-                <input type="number" name="" id="qtyCart2" class="input-quantity" value="2" min="1" max="7" disabled>
-                <button class="qty-plus" id="qtyPlus" data-target="#qtyCart2"><i class="uil uil-plus"></i></button>
+              <!-- Item list -->
+              <div class="cart-list">
+                <img src="../img/produk/good-faces-E0cTcs52a14-unsplash.jpg" alt="" class="cart-img">
+                <div class="cart-body">
+                  <div class="cart-info">
+                    <h6 class="cart-name">Hijab Segiempat by Humairah</h6>
+                    <span class="cart-size">Ukuran: M</span>
+                    <h6 class="cart-price">Rp. 30.000</h6>
+                  </div>
+                  <div class="qty-group">
+                    <button class="qty-min" id="qtyMin" data-target="#qtyCart2"><i class="uil uil-minus"></i></button>
+                    <input type="text" name="qty" id="qtyCart2" class="input-quantity" value="2" min="1" max="12" disabled>
+                    <button class="qty-plus" id="qtyPlus" data-target="#qtyCart2"><i class="uil uil-plus"></i></button>
+                  </div>
+                  <div class="cart-total text-right">
+                    <h6>Rp. 60.000</h6>
+                  </div>
+                </div>
               </div>
-              <span class="cart-total" id="totalPrice">IDR 60.000</span>
+              <!-- Item list -->
+              <div class="cart-list">
+                <img src="../img/produk/good-faces-E0cTcs52a14-unsplash.jpg" alt="" class="cart-img">
+                <div class="cart-body">
+                  <div class="cart-info">
+                    <h6 class="cart-name">Hijab Segiempat by Humairah</h6>
+                    <span class="cart-size">Ukuran: M</span>
+                    <h6 class="cart-price">Rp. 30.000</h6>
+                  </div>
+                  <div class="qty-group">
+                    <button class="qty-min" id="qtyMin" data-target="#qtyCart3"><i class="uil uil-minus"></i></button>
+                    <input type="text" name="qty" id="qtyCart3" class="input-quantity" value="2" min="1" max="12" disabled>
+                    <button class="qty-plus" id="qtyPlus" data-target="#qtyCart3"><i class="uil uil-plus"></i></button>
+                  </div>
+                  <div class="cart-total text-right">
+                    <h6>Rp. 60.000</h6>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="cart-delete">
-              <a class="btn-del-cart"><i class="uil uil-trash"></i></a>
+            <hr class="dashed">
+            <div class="cart-footer">
+              <span>Subtotal:</span>
+              <h5 class="cart-subtotal">Rp. 180.000</h5>
             </div>
           </div>
         </div>
-
-        <div class="row">
-          <div class="col">
-            <a href="katalog.html"><i class="uil uil-arrow-left"></i> Lanjut Belanja</a>
-          </div>
-          <div class="col text-right">
-            <a data-page="#pagePengiriman" id="toPage" class="btn btn-primary">Lanjut</a>
-          </div>
+        <div class="cart-btn-group">
+          <a href="katalog.html" class="btn btn-outline-secondary btn-width">LANJUT BELANJA</a>
+          <a href="check-out.html" class="btn btn-primary btn-width">CHECKOUT</a>
         </div>
       </div>
-
-      <!-- page pengiriman -->
-      <div class="checkout-page" id="pagePengiriman">
-        <h5 class="page-title">Pengiriman</h5>
-        <div class="row mt-4">
-          <div class="col">
-            <h6>Data Pembeli</h6>
-          </div>
-        </div>
-        <div class="form-row">
-          <div class="form-group col-md-6 col-lg-4">
-            <label for="nama">Nama Terang</label>
-            <input type="text" class="form-control" id="nama" maxlength="40" placeholder="e.g: Gagas Adi">
-          </div>
-          <div class="form-group col-md-6 col-lg-4">
-            <label for="email">Email</label>
-            <input type="email" class="form-control" id="email" placeholder="e.g: gagasadi@mail.co">
-          </div>
-          <div class="form-group col-md-6 col-lg-4">
-            <label for="no_hp">No. Hp</label>
-            <input type="no_hp" class="form-control" id="no_hp" maxlength="13" placeholder="e.g: 082711xxxxxx">
-          </div>
-        </div>
-
-        <div class="row mt-4">
-          <div class="col">
-            <h6>Data Alamat</h6>
-          </div>
-        </div>
-        <div class="form-row">
-          <div class="form-group col-md-6 col-lg-4">
-            <label for="provinsi">Provinsi</label>
-            <select class="custom-select" id="provinsi">
-              <option selected>Pilih Provinsi</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-            </select>
-          </div>
-          <div class="form-group col-md-6 col-lg-4">
-            <label for="kota">Kota/Kabupaten</label>
-            <select class="custom-select" id="kota">
-              <option selected>Pilih Kota/Kabupaten</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-            </select>
-          </div>
-          <div class="form-group col-md-6 col-lg-4">
-            <label for="kecamatan">Kecamatan</label>
-            <select class="custom-select" id="kecamatan">
-              <option selected>Pilih Kecamatan</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-            </select>
-          </div>
-          <div class="form-group col-md-6 col-lg-4">
-            <label for="kode_pos">Kode Pos</label>
-            <input class="form-control" type="text" name="kode_pos" id="kode_pos" maxlength="5" placeholder="e.g: 68219">
-          </div>
-        </div>
-        <div class="form-row">
-          <div class="form-group col-md-6 col-lg-4">
-            <label for="alamat">Alamat Lengkap</label>
-            <textarea class="form-control" id="alamat" rows="3" placeholder="e.g: Jalan Sumatra no.9 RW.2 RT.6"></textarea>
-          </div>
-          <div class="form-group col-md-6 col-lg-4">
-            <label for="catatan">Catatan</label>
-            <textarea class="form-control" id="catatan" rows="3" placeholder="e.g: taruh paket di lobby"></textarea>
-          </div>
-        </div>
-
-        <div class="row mt-2">
-          <div class="col text-right">
-            <a data-page="#pageCart"  id="toPage" class="btn btn-secondary">Kembali</a>
-            <a data-page="#pagePembayaran" id="toPage" class="btn btn-primary">Lanjut</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- page pembayaran -->
-      <div class="checkout-page" id="pagePembayaran">
-        <h5 class="page-title">Metode Pembayaran</h5>
-
-        <div class="row">
-          <div class="col">
-            <h6 class="mt-3">Transfer Bank</h6>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-6 col-lg-4">
-            <div class="card-border-left-orange">
-              <img src="../img/other/36384348ef9d7bfff66da6da9e975d56.png" alt="logo-bni" class="img-payment-logo">
-              <h6>BNI a.n Firza Arinda Mufqi</h6>
-              <span>No. Rekening 0643526453</span>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="card-border-left-blue">
-              <img src="../img/other/logo-bcapng-32694.png" alt="" class="img-payment-logo">
-              <h6>BCA a.n Firza Arinda Mufqi</h6>
-              <span>No. Rekening 1200525856</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col">
-            <h6 class="mt-3">Digital Wallet</h6>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-6 col-lg-4">
-            <div class="card-border-left-purple">
-              <img src="../img/other/ovo-logo.png" alt="logo-bni" class="img-payment-logo">
-              <h6>OVO a.n Unni korean food</h6>
-            </div>
-          </div>
-        </div>
-
-        <div class="row mt-3">
-          <div class="col">
-            <p>Klik/Tap buat pesanan untuk membuat pesanan anda.</p>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col text-right">
-            <a data-page="#pagePengiriman" id="toPage" class="btn btn-secondary">Kembali</a>
-            <a data-page="#pageKonfirmasi" id="toPage" class="btn btn-primary">Buat Pesanan</a>
-          </div>
-        </div>
-        
-      </div>
-
-      <!-- page konfirmasi pembayaran -->
-      <div class="checkout-page" id="pageKonfirmasi">
-        <h5 class="page-title">Konfirmasi Pembayaran</h5>
-        <div class="row">
-          <div class="col">
-            <a href="index.html"><i class="uil uil-arrow-left"></i> Kembali belanja Belanja</a>
-          </div>
-          <div class="col text-right">
-            <a class="btn-page-next">Konfirmasi Pembayaran</a>
-          </div>
-        </div>
-      </div>
-
-    </form>
+    </div>
   </section>
 
   <!-- Footer -->
