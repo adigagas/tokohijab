@@ -171,7 +171,7 @@ section {
 
 section.container.full-content,
 section.container-fluid.full-content {
-    min-height: calc(100vh - 80px - 355px);
+    min-height: calc(100vh - 80px - 385px);
 }
 
 .section-title {
@@ -443,7 +443,7 @@ section.container-fluid.full-content {
 
 /* card form */
 .card-form {
-    padding: 15px !important;
+    padding: 8px !important;
 }
 
 /* card produk */
@@ -545,7 +545,7 @@ a.card .card-title {
 }
 
 hr.dashed {
-    border-top: 1px dashed #dee2e6;
+    border-top: 2px dashed #dee2e6;
 }
 
 /* cart produk */
@@ -616,17 +616,20 @@ hr.dashed {
 }
 
 .table-checkout thead th {
-    border-bottom: 1px dashed #dee2e6 !important;
-    border-top: 1px dashed #dee2e6 !important;
+    border-bottom: 2px dashed #dee2e6 !important;
+    border-top: 2px dashed #dee2e6 !important;
 }
 
 .table-checkout tbody td {
     border-top: 0px !important;
 }
 
+.table-checkout tbody tr:last-child td {
+    border-bottom: 2px dashed #dee2e6 !important;
+}
+
 .table-checkout tfoot td {
-    border-bottom: 1px dashed #dee2e6 !important;
-    border-top: 1px dashed #dee2e6 !important;
+    border-top: 0px;
 }
 
 .nowrap-text {
@@ -840,6 +843,10 @@ hr.dashed {
 
     .qty-group {
         font-size: 1.25rem;
+    }
+
+    .card-form {
+        padding: 15px !important;
     }
 
     .cart-info {

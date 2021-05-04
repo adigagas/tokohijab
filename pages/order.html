@@ -23,14 +23,14 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
+        <li class="nav-item active">
           <a class="nav-link" href="index.html">Beranda</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="katalog.html">Belanja</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="cek-order.html">Cek Pesanan</a>
+          <a class="nav-link" href="cek-order.html">Cek Pesanan</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="tentang.html">Tentang</a>
@@ -49,24 +49,99 @@
   <!-- Section Cek Order -->
   <section class="container full-content">
     <div class="row justify-content-center">
-      <div class="col-md-8 col-lg-6 col-xl-5">
+      <div class="col-md-10 col-xl-8">
         <div class="card mb-4">
           <div class="card-body card-form">
-            <h5 class="card-title">Cek Pesanan</h5>
+            <div class="row">
+              <div class="col">
+                <a href="cek-order.html"><i class="uil uil-arrow-left"></i> KEMBALI</a>
+              </div>
+              <div class="col text-right">
+                <h6>No. Pesanan. 1237912730 | <small class="text-primary">TERKIRIM</small></h6>
+              </div>
+            </div>
             <hr class="dashed">
-            <form action="">
-              <div class="form-row">
-                <div class="form-group col">
-                  <label for="id_order">Id Pesanan</label>
-                  <input type="text" class="form-control" id="id_order" name="id_order" placeholder="Masukkan id pesanan">
-                </div>
+            <h5 class="card-title">PENGIRIMAN</h5>
+            <hr class="dashed">
+            <span>Gagas Adi Rismawan</span>
+            <br>
+            <small>No. Hp: 012736812390, email: adigagas@gmail.com</small>
+            <br>
+            <small>Perumahan Kota Bunga Indah blok CB no.6, BONDOWOSO, BONDOWOSO, JAWATIMUR, 62356</small>
+            <hr class="dashed">
+            <span>J&T | JP7819623123786</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-body card-form">
+            <div class="row">
+              <div class="col">
+                <h5 class="card-title">PESANAN</h5>
               </div>
-              <div class="form-row">
-                <div class="form-group col text-right">
-                  <button class="btn btn-primary btn-block" type="submit" id="submit" name="submit">CEK PESANAN</button>
-                </div>
+              <div class="col text-right">
+                <span>4 Items</span>
               </div>
-            </form>
+            </div>
+            <table class="table table-checkout">
+              <thead>
+                <tr>
+                  <th>Item</th>
+                  <th class="text-right">Harga Satuan</th>
+                  <th class="text-center">Qty</th>
+                  <th width="130px" class="text-right">Total</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <h6>Hijab Segiempat by Humairah</h6>
+                    <span>Ukuran: M</span>
+                  </td>
+                  <td class="text-right">Rp.30.000</td>
+                  <td class="text-center">x2</td>
+                  <td class="text-right">
+                    <h6>Rp. 60.000</h6>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <h6>Hijab Segiempat by Humairah</h6>
+                    <span>Ukuran: M</span>
+                  </td>
+                  <td class="text-right">Rp.30.000</td>
+                  <td class="text-center">x2</td>
+                  <td class="text-right">
+                    <h6>Rp. 60.000</h6>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <h6>Hijab Segiempat by Humairah</h6>
+                    <span>Ukuran: M</span>
+                  </td>
+                  <td class="text-right">Rp.30.000</td>
+                  <td class="text-center">x2</td>
+                  <td class="text-right">
+                    <h6>Rp. 60.000</h6>
+                  </td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td>Subtotal:</td>
+                  <td colspan="3" class="text-right"><h5>Rp. 180.000</h5></td>
+                </tr>
+                <tr>
+                  <td>Ongkos Kirim:</td>
+                  <td colspan="3" class="text-right"><h6>Rp. 45.000</h6></td>
+                </tr>
+                <tr>
+                  <td>GrandTotal:</td>
+                  <td colspan="3" class="text-right"><h4>Rp. 225.000</h4></td>
+                </tr>
+              </tfoot>
+            </table>
           </div>
         </div>
       </div>
