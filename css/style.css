@@ -607,6 +607,10 @@ hr.dashed {
 }
 
 /* Table Checkout */
+.table-checkout {
+    margin-bottom: 0px;
+}
+
 .table-checkout thead {
     color: var(--gray);
 }
@@ -632,6 +636,18 @@ hr.dashed {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: "----";
+}
+
+/* Konfirm Order */
+.code-outer {
+    background-color: #ffbddc;
+    color: #e83e8c;
+    padding: .75rem;
+    margin: 1rem 0rem;
+    border: 1px solid #e83e8c;
+}
+.code-special {
+    margin-bottom: 0px;
 }
 
 /* payment */
