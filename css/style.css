@@ -221,6 +221,7 @@ section.container-fluid.full-content {
 /* input search */
 .search-group {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     margin-bottom: 3rem;
 }
@@ -257,15 +258,18 @@ section.container-fluid.full-content {
     font-weight: 500;
     margin-left: 5px;
     margin-right: 40px;
+    display: none;
 }
 
 .filter-group {
     display: flex;
+    flex-grow: 1;
     align-items: center;
     background-color: white;
     padding: .65rem 1rem;
     border-radius: .5rem;
     margin: 0px 5px;
+    margin-top: .5rem;
     height: 46px;
     box-shadow: 2px 2px 4px var(--gray-50);
 }
@@ -646,8 +650,10 @@ hr.dashed {
     margin: 1rem 0rem;
     border: 1px solid #e83e8c;
 }
+
 .code-special {
     margin-bottom: 0px;
+    font-size: 1.25rem;
 }
 
 /* payment */
@@ -711,6 +717,14 @@ hr.dashed {
 
 .footer a:hover {
     color: var(--primary);
+}
+
+.xs-hidden {
+    display: none;
+}
+
+.xs-show {
+    display: table-cell;
 }
 
 /* back to top */
@@ -817,6 +831,18 @@ hr.dashed {
     .img-top {
         height: 260px;
     }
+
+    .code-special {
+        font-size: 1.5rem;
+    }
+
+    .xs-hidden {
+        display: table-cell;
+    }
+
+    .xs-show {
+        display: none;
+    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -834,6 +860,23 @@ hr.dashed {
 
     .carousel-item .btn.btn-special {
         font-size: 1.25rem !important;
+    }
+
+    .search-group {
+        flex-wrap: nowrap;
+    }
+
+    .search-input-group {
+        flex-grow: 2;
+    }
+
+    .search-title {
+        display: block;
+    }
+
+    .filter-group {
+        flex-grow: 1;
+        margin-top: 0px;
     }
 
     a.card {
@@ -872,6 +915,11 @@ hr.dashed {
     .cart-total {
         margin-top: 0rem;
         align-self: flex-start;
+    }
+
+    .code-special {
+        margin-bottom: 0px;
+        font-size: 2rem;
     }
 }
 
@@ -933,10 +981,14 @@ hr.dashed {
     .cart-total {
         margin-top: 0rem;
     }
+
+    .code-special {
+        font-size: 2.5rem;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
-    a.card { 
+    a.card {
         width: 218px;
     }
 
