@@ -462,10 +462,6 @@ a.card {
     animation-delay: .2s;
 }
 
-a.card:hover {
-    transform: translateY(-5px);
-}
-
 a.card.hide-card {
     display: none;
 }
@@ -924,7 +920,7 @@ hr.dashed {
 }
 
 @media only screen and (min-width: 1200px) {
-    a.card {
+    a.card { 
         width: 218px;
     }
 
