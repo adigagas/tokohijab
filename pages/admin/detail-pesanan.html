@@ -57,14 +57,14 @@
             </li>
 
             <!-- Nav Item - Pesanan -->
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link" href="pesanan.html">
                     <i class="fas fa-fw fa-receipt"></i>
                     <span>Pesanan</span></a>
             </li>
 
             <!-- Nav Item - Produk -->
-            <li class="nav-item">
+            <li class="nav-item active">
                 <a class="nav-link" href="produk.html">
                     <i class="fas fa-fw fa-box-open"></i>
                     <span>Produk</span></a>
@@ -154,85 +154,133 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-2 text-gray-800">Pesanan</h1>
-                    <p class="mb-4">Menampilkan daftar pesanan yang terdapat di <a href="../index.html" target="_blank" rel="noopener noreferrer">TokoHijab</a>.</p>
+                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                        <div>
+                            <h1 class="h3 mb-2 text-gray-800">Detail Pesanan</h1>
+                        </div>  
+                        <div>
+                            <a href="pesanan.html">
+                                <i class="fas fa-arrow-left"></i> Kembali
+                            </a>
+                        </div>
+                    </div>
 
-                    <!-- DataTales Example -->
-                    <div class="card shadow mb-4">
-                        <div class="card-body">
-                            <div class="table-responsive">
-                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                                    <thead>
-                                        <tr>
-                                            <th>Id Pesanan</th>
-                                            <th>Nama Cust</th>
-                                            <th>Tanggal</th>
-                                            <th>Grand Total</th>
-                                            <th>Status</th>
-                                            <th width="55px">Aksi</th>
-                                        </tr>
-                                    </thead>
-                                    <tfoot>
-                                        <tr>
-                                            <th>Id Pesanan</th>
-                                            <th>Nama Cust</th>
-                                            <th>Tanggal</th>
-                                            <th>Grand Total</th>
-                                            <th>Status</th>
-                                            <th>Aksi</th>
-                                        </tr>
-                                    </tfoot>
-                                    <tbody>
-                                        <tr>
-                                            <td>ODR9023828394230</td>
-                                            <td>Dahlia Regina</td>
-                                            <td>26/09/19</td>
-                                            <td>Rp. 77.000</td>
-                                            <td>
-                                                <span class="badge badge-secondary">diproses</span>
-                                            </td>
-                                            <td class="text-center">
-                                                <a href="detail-pesanan.html" class="btn btn-sm btn-info btn-icon"><span class="btn-text">Detail</span> <i class="fas fa-plus fa-sm"></i></a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>ODR5423985723450</td>
-                                            <td>Robert Nill</td>
-                                            <td>23/02/20</td>
-                                            <td>Rp. 120.000</td>
-                                            <td>
-                                                <span class="badge badge-success">dibayar</span>
-                                            </td>
-                                            <td class="text-center">
-                                                <a class="btn btn-sm btn-info btn-icon"><span class="btn-text">Detail</span> <i class="fas fa-plus fa-sm"></i></a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>ODR3498549587042</td>
-                                            <td>Rustam Sun</td>
-                                            <td>13/12/19</td>
-                                            <td>Rp. 93.000</td>
-                                            <td>
-                                                <span class="badge badge-warning">menunggu konfirmasi</span>
-                                            </td>
-                                            <td class="text-center">
-                                                <a class="btn btn-sm btn-info btn-icon"><span class="btn-text">Detail</span> <i class="fas fa-plus fa-sm"></i></a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>ODR7834509489022</td>
-                                            <td>Wanda Nisa</td>
-                                            <td>14/07/21</td>
-                                            <td>Rp. 220.000</td>
-                                            <td>
-                                                <span class="badge badge-danger">gagal</span>
-                                            </td>
-                                            <td class="text-center">
-                                                <a class="btn btn-sm btn-info btn-icon"><span class="btn-text">Detail</span> <i class="fas fa-plus fa-sm"></i></a>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                    <div class="row">
+                        <!-- Order Detail -->
+                        <div class="col-xl-8">
+                            <div class="card mb-4">
+                                <div class="card-body">
+                                    <div class="row mb-3">
+                                        <div class="col">
+                                            <h5>PESANAN</h5>
+                                        </div>
+                                        <div class="col text-right">
+                                            <span>4 Items</span>
+                                        </div>
+                                    </div>
+                                    <div class="table-responsive">
+                                        <table class="table table-checkout">
+                                            <thead>
+                                                <tr>
+                                                    <th>Item</th>
+                                                    <th class="text-right xs-hidden">Harga</th>
+                                                    <th class="text-center" width="30px">Qty</th>
+                                                    <th class="text-right">Total</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <h6>Hijab Segiempat by Humairah</h6>
+                                                        <span>Ukuran: M</span>
+                                                        <span class="text-dark xs-show">Rp. 30.000</span>
+                                                    </td>
+                                                    <td class="text-right xs-hidden">Rp. 30.000</td>
+                                                    <td class="text-center">x2</td>
+                                                    <td class="text-right text-nowrap">
+                                                        <h6>Rp. 60.000</h6>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <h6>Hijab Segiempat by Humairah</h6>
+                                                        <span>Ukuran: M</span>
+                                                        <span class="text-dark xs-show">Rp. 30.000</span>
+                                                    </td>
+                                                    <td class="text-right xs-hidden">Rp. 30.000</td>
+                                                    <td class="text-center">x2</td>
+                                                    <td class="text-right">
+                                                        <h6>Rp. 60.000</h6>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <h6>Hijab Segiempat by Humairah</h6>
+                                                        <span>Ukuran: M</span>
+                                                        <span class="text-dark xs-show">Rp. 30.000</span>
+                                                    </td>
+                                                    <td class="text-right xs-hidden">Rp. 30.000</td>
+                                                    <td class="text-center">x2</td>
+                                                    <td class="text-right">
+                                                        <h6>Rp. 60.000</h6>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                            <tfoot>
+                                                <tr>
+                                                    <td>Subtotal:</td>
+                                                    <td colspan="3" class="text-right"><h5 class="text-dark">Rp. 180.000</h5></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Ongkir:</td>
+                                                    <td colspan="3" class="text-right"><h6 class="text-dark">Rp. 45.000</h6></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>GrandTotal:</td>
+                                                    <td colspan="3" class="text-right"><h5 class="text-pink">Rp. 225.000</h5></td>
+                                                </tr>
+                                            </tfoot>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Order Info -->
+                        <div class="col-xl-4">
+                            <div class="card mb-4">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col">
+                                            <h5 class="text-dark">INFO</h5>
+                                        </div>
+                                        <div class="col text-right">
+                                            <span class="text-dark">
+                                                20/08/2020
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <hr class="dashed">
+                                    <div class="row">
+                                        <div class="col">
+                                            <span class="text-dark">ODR237861982389</span>
+                                        </div>
+                                        <div class="col text-right">
+                                            <span>TERKIRIM</span>
+                                        </div>
+                                    </div>
+                                    <hr class="dashed">
+                                    <h6 class="text-dark">
+                                        Gagas Adi Rismawan
+                                    </h6>
+                                    <span>08127123681, adigagas@gmail.com</span>
+                                    <div class="mt-3">
+                                        <small>Perumahan bunga indah blok AC no. 21. Sukataman, BONDOWOSO, KAB. BONDOWOSO, JAWA TIMUR, 62188</small>
+                                    </div>
+                                    <hr class="dashed">
+                                    <a href="" class="btn btn-primary btn-block"><i class="fas fa-plus"></i> ONGKOS KIRIM</a>
+                                    <a href="" class="btn btn-primary btn-block"><i class="fas fa-plus"></i> BUKTI TRANSFER</a>
+                                    <a href="" class="btn btn-pink btn-block"><i class="fas fa-plus"></i> RESI PENGIRIMAN</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -296,11 +344,6 @@
 
     <!-- Page level plugins -->
     <script src="../../vendor/admin/chart.js/Chart.min.js"></script>
-
-    <!-- Page level custom scripts -->
-    <script src="../../js/demo/chart-area-demo.js"></script>
-    <script src="../../js/demo/chart-pie-demo.js"></script>
-    <script src="../../js/demo/chart-bar-demo.js"></script>
 
     <!-- Page level plugins -->
     <script src="../../vendor/admin/datatables/jquery.dataTables.min.js"></script>

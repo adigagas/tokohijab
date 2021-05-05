@@ -9,6 +9,16 @@ a:hover {
     text-decoration: underline;
 }
 
+.btn-pink {
+    background-color: #eb4b95 !important;
+    color: white;
+}
+
+.btn-pink:hover {
+    background-color: #df1d78 !important;
+    color: white;
+}
+
 .link-icon {
     font-size: 1rem;
 }
@@ -27,6 +37,47 @@ a:hover {
 
 a.link-icon:hover {
     text-decoration: none;
+}
+
+hr.dashed {
+    border-top: 2px dashed #dee2e6;
+}
+
+/* card */
+.card .card-body h1,
+.card .card-body h2,
+.card .card-body h3,
+.card .card-body h4,
+.card .card-body h5,
+.card .card-body h6 {
+    font-weight: 600 !important;
+    color: #333333;
+}
+
+/* Table Checkout */
+.table-checkout {
+    margin-bottom: 0px;
+}
+
+.table-checkout thead {
+    color: #aeaeae;
+}
+
+.table-checkout thead th {
+    border-bottom: 2px dashed #dee2e6 !important;
+    border-top: 2px dashed #dee2e6 !important;
+}
+
+.table-checkout tbody td {
+    border-top: 0px !important;
+}
+
+.table-checkout tbody tr:last-child td {
+    border-bottom: 2px dashed #dee2e6 !important;
+}
+
+.table-checkout tfoot td {
+    border-top: 0px;
 }
 
 /* button */
@@ -139,6 +190,20 @@ a.link-icon:hover {
     border-color: #e83e8c !important;
 }
 
+/* card responsive */
+.card-body {
+    padding: 8px;
+}
+
+/* show hide */
+.xs-hidden {
+    display: none;
+}
+
+.xs-show {
+    display: table-cell;
+}
+
 /* responsive */
 @media only screen and (min-width: 576px) {
     .btn-icon {
@@ -150,11 +215,27 @@ a.link-icon:hover {
     .sidebar .sidebar-brand .sidebar-brand-toggled {
         display: none;
     }
+
+    .xs-hidden {
+        display: table-cell;
+    }
+
+    .xs-show {
+        display: none;
+    }
+
+    .card-body {
+        padding: 16px;
+    }
 }
 
 @media only screen and (min-width: 992px) {
     .btn-text {
         display: inline-block !important;
+    }
+
+    .card-body {
+        padding: 20px;
     }
 }
 
