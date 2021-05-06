@@ -39,6 +39,13 @@ a.link-icon:hover {
     text-decoration: none;
 }
 
+/* background */
+.bg-gradient-pink {
+    background-color: #e83e8c;
+    background-image: linear-gradient(180deg, #eb4b95 10%, #da2177 100%);
+    background-size: cover;
+}
+
 hr.dashed {
     border-top: 2px dashed #dee2e6;
 }
